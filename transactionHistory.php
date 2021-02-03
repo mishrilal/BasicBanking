@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html>
     <head>
          <!-- Required meta tags -->
@@ -13,7 +14,30 @@
     </head>
 
     <body>
+    <?php
+        include 'connection.php';
+        $sql = "SELECT * FROM transcations";
+        $result = mysqli_query($con,$sql);
+    ?>
+
+
         <h3>Transaction History</h3>
+        <table>
+            <?php 
+                while($rows=mysqli_fetch_assoc($result)){
+            ?>
+                <tr>
+                    <td><?php echo $rows['id'] ?></td>
+                    <td><?php echo $rows['transcationID']?></td>
+                    <td><?php echo $rows['accountFrom']?></td>
+                    <td><?php echo $rows['accountTo']?></td>
+                    <td><?php echo $rows['amount']?></td>
+                    <td><?php echo $rows['date']?></td>
+                </tr>
+            <?php
+                }
+            ?>
+        </table>
     </body>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
