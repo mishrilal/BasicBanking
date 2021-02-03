@@ -1,3 +1,61 @@
+<?php 
+    include 'connection.php';
+
+    if(isset($_POST['submit'])) {
+        $from = $_GET['accountNo'];
+        $to = $_POST['to'];
+        $amount = $_POST['amount'];
+
+        $sql = "select * from users where id=$from";
+        $query = mysqli_query($con, $sql);
+        $sql1 = mysqli_fetch_array($query);
+
+        $sql = "select * from users where id=$to";
+        $query = mysqli_query($con, $sql);
+        $sql2 = mysqli_fetch_array($query);
+
+        if($amount < 0) {
+            echo '<script type="text/javascript">';
+            echo ' alert("Invalid amount")';
+            echo '</script>';
+        }
+        else if($amount == 0) {
+            echo "<script type='text/javascript'>";
+            echo "alert('Zero value cannot be transferred')";
+            echo "</script>";
+        }
+        else {
+            $newbalance = $sql1['balance'] - $amount;
+            $sql = "update users ser balance=$newbalance where id=$to";
+            mysqli_query($con, $sql);
+
+            $newbalance = $sql2['balance'] + $amount;
+            $sql = "update users set balance=$newbalance where id=$to";
+            mysqli_query($con, $sql);
+
+            $sender = $sql1['accountNo'];
+            $reciver = $sql2['accountNo'];
+            $sql = "insert into transcations(`sender`,`reciver`, `balance`) value 
+                ('$sender', '$receiver', '$amount')";
+            $query=mysqli_query($con, $sql);
+
+            if($query) {
+                echo "<script>
+                        alert('Transcation Successful');
+                        window.loaction='transcationHistory.php';
+                     </script>";
+            }
+
+            $newbalance = 0;
+            $amount = 0;
+
+        }
+
+    }
+?>
+
+
+
 <!doctype html>
 <html>
     <head>
