@@ -13,15 +13,14 @@
     </head>
 
     <body>
-    <?php 
-        include 'navbar.php'
+        <?php 
+            include 'navbar.php'
         ?>
-    <?php
-        include 'connection.php';
-        $sql = "SELECT * FROM users";
-        $result = mysqli_query($con,$sql);
-    ?>
-
+        <?php
+            include 'connection.php';
+            $sql = "SELECT * FROM users";
+            $result = mysqli_query($con,$sql);
+        ?>
 
         <h3>All Customer Apperars here</h3>
         <table>
