@@ -13,6 +13,9 @@
     </head>
 
     <body>
+    <?php 
+        include 'navbar.php'
+        ?>
         <h3>Welcome to GRIP Bank</h3>
         <br>
         <a href="viewCustomer.php"><button>View All Customer</button></a>

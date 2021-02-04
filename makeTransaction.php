@@ -83,6 +83,9 @@
     </head>
 
     <body>
+    <?php 
+        include 'navbar.php'
+        ?>
         <h3>transfermoney</h3>
         <div class="container">
         <h2 class="text-center pt-4">Transaction</h2>

@@ -13,6 +13,9 @@
     </head>
 
     <body>
+    <?php 
+        include 'navbar.php'
+        ?>
     <?php
         include 'connection.php';
         $sql = "SELECT * FROM users";
