@@ -16,7 +16,6 @@
         <h3>Welcome to GRIP Bank</h3>
         <br>
         <a href="viewCustomer.php"><button>View All Customer</button></a>
-        <a href="makeTransaction.php"><button>Transfer Money</button></a>
         <a href="transactionHistory.php"><button>Transaction History</button></a>
     </body>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
