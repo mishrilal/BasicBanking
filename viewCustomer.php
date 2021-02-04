@@ -31,6 +31,11 @@
                     <td><?php echo $rows['email']?></td>
                     <td><?php echo $rows['balance']?></td>
                     <td><?php echo $rows['numberOfTransction']?></td>
+                    <td>
+                        <a href="makeTransaction.php?id=<?php echo $rows['accountNo'] ;?>"> 
+                            <button type="button" class="btn">Transfer</button>
+                        </a>
+                    </td> 
                 </tr>
             <?php
                 }
