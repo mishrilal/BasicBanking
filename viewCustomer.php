@@ -13,6 +13,7 @@
     </head>
 
     <body>
+    <div class="container">
         <?php 
             include 'navbar.php'
         ?>
@@ -23,26 +24,37 @@
         ?>
 
         <h3>All Customer Apperars here</h3>
-        <table>
+        <table class = "table table-dark table-hover">
+            <thead>
+                <tr>
+                    <th>Account No.</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Balance</th>
+                    <th>Transfer Money</th>
+                </tr>
+            </thead>
             <?php 
                 while($rows=mysqli_fetch_assoc($result)){
             ?>
-                <tr>
-                    <td><?php echo $rows['accountNo'] ?></td>
-                    <td><?php echo $rows['firstName'], ' ', $rows['lastName']?></td>
-                    <td><?php echo $rows['email']?></td>
-                    <td><?php echo $rows['balance']?></td>
-                    <td><?php echo $rows['numberOfTransction']?></td>
-                    <td>
-                        <a href="makeTransaction.php?id=<?php echo $rows['accountNo'] ;?>"> 
-                            <button type="button" class="btn">Transfer</button>
-                        </a>
-                    </td> 
-                </tr>
+            <tr>
+                <td><?php echo $rows['accountNo'] ?></td>
+                <td><?php echo $rows['firstName'], ' ', $rows['lastName']?></td>
+                <td><?php echo $rows['email']?></td>
+                <td><?php echo $rows['balance']?></td>
+                <td>
+                    <a href="makeTransaction.php?id=<?php echo $rows['accountNo'] ;?>">
+                        <button type="button" class="btn btn-dark btn-outline-primary">
+                            Transfer
+                        </button>
+                    </a>
+                </td> 
+            </tr>
             <?php
                 }
             ?>
         </table>
+    </div>
     </body>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>

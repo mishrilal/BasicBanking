@@ -66,8 +66,6 @@
     }
 ?>
 
-
-
 <!doctype html>
 <html>
     <head>
