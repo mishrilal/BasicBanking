@@ -1,0 +1,17 @@
+<svg width="1600" height="1200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="1202" width="1602" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path fill="#ffffff" stroke="null" id="svg_2" d="m1596.81787,320.78121l0.6062,39.38345l0,39.83614l-794.1262,0l-794.73241,0l1.81861,-39.38346l1.81861,-39.83613l394.03206,-157.08114c217.02079,-86.46252 396.45693,-156.62849 399.48794,-156.17581l791.0952,313.25695zm-1217.86228,140.33185l0,20.37075l-133.36469,0l-133.3647,0l0,-20.37075l0,-20.37076l133.3647,0l133.36469,0l0,20.37076zm369.78399,0l0,20.37075l-130.33368,0l-130.33374,0l0,-20.37075l0,-20.37076l130.33374,0l130.33368,0l0,20.37076zm369.78394,0l0,20.37075l-130.33368,0l-130.33368,0l0,-20.37075l0,-20.37076l130.33368,0l130.33368,0l0,20.37076zm375.84596,0l0,20.37075l-133.36469,0l-133.3647,0l0,-20.37075l0,-20.37076l133.3647,0l133.36469,0l0,20.37076zm-1169.97217,276.13686l0,237.65877l-78.80641,0l-78.80642,0l0,-237.65877l0,-237.65878l78.80642,0l78.80641,0l0,237.65878zm375.84602,0l0,237.65877l-81.83743,0l-81.83748,0l0,-237.65877l0,-237.65878l81.83748,0l81.83743,0l0,237.65878zm369.78394,0l0,237.65877l-81.83743,0l-81.83743,0l0,-237.65877l0,-237.65878l81.83743,0l81.83743,0l0,237.65878zm369.78393,0l0,237.65877l-78.80641,0l-78.80642,0l0,-237.65877l0,-237.65878l78.80642,0l78.80641,0l0,237.65878zm-1060.8556,276.13686l0,20.37075l-133.36469,0l-133.3647,0l0,-17.20197c0,-9.50635 1.81861,-19.0127 4.24342,-20.37075c1.81861,-1.81073 61.83273,-3.16878 133.3647,-3.16878l129.12127,0l0,20.37075zm369.78399,0l0,20.37075l-130.33368,0l-130.33374,0l0,-20.37075l0,-20.37075l130.33374,0l130.33368,0l0,20.37075zm369.78394,0l0,20.37075l-130.33368,0l-130.33368,0l0,-20.37075l0,-20.37075l130.33368,0l130.33368,0l0,20.37075zm374.63356,0.90537l1.81861,19.46538l-133.3647,0l-133.9709,0l0,-20.37075l0,-20.37075l132.15229,0.90536l131.54609,1.35805l1.81861,19.01271zm49.70865,80.57764l0,20.37075l-739.56786,0l-739.56793,0l0,-20.37075l0,-20.37075l739.56793,0l739.56786,0l0,20.37075zm54.55834,76.95617l0,20.37076l-794.1262,0l-794.12621,0l0,-20.37076l0,-20.37075l794.12621,0l794.1262,0l0,20.37075z"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_3" y2="96.87421" x2="216.91691" y1="151.04251" x1="128.5809" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_4" y2="108.54123" x2="124.4141" y1="125.2084" x1="161.91524" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_5" y2="96.87421" x2="76.91266" y1="121.04161" x1="138.5812" stroke-opacity="null" stroke-width="null" stroke="null" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_7" y2="38.53911" x2="121.91403" y1="103.54108" x1="46.91176" stroke-opacity="null" stroke-width="null" stroke="null" fill="none"/>
+  <text font-style="italic" stroke="null" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="100" id="svg_11" y="204.99981" x="591.00016" stroke-opacity="null" stroke-width="0" fill="#000000">GRIP</text>
+  <text font-style="italic" stroke="null" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="100" id="svg_12" y="319.99976" x="763.99926" stroke-opacity="null" stroke-width="0" fill="#000000">Bank</text>
+ </g>
+</svg>

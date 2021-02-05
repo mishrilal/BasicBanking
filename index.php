@@ -16,10 +16,13 @@
         <?php 
             include 'navbar.php'
         ?>
-        <h3>Welcome to GRIP Bank</h3>
+        <h2>Welcome to GRIP Bank</h2>
+            <div class="col-sm-12 col-md img text-center">
+            <img src="images/logo.svg" alt="" width="400" height="300" class="d-inline-block align-top">
+            </div>
         <br>
-        <a href="viewCustomer.php"><button>View All Customer</button></a>
-        <a href="transactionHistory.php"><button>Transaction History</button></a>
+        <a href="viewCustomer.php"><button class="btn btn-dark btn-outline-warning">View All Customer</button></a>
+        <a href="transactionHistory.php"><button class="btn btn-dark btn-outline-warning">Transaction History</button></a>
     </body>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>

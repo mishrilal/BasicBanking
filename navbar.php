@@ -1,5 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
-  <a class="navbar-brand" href="/">GRIP Bank</a>
+  <a class="navbar-brand" href="/"><img src="images/logo.svg" alt="" width="30" height="24" class="d-inline-block align-top">
+    GRIP Bank
+  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
