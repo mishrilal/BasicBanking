@@ -13,7 +13,7 @@
     </head>
 
     <body>
-    <div class="container">
+    
         <?php 
             include 'navbar.php'
         ?>
@@ -22,8 +22,8 @@
             $sql = "SELECT * FROM users";
             $result = mysqli_query($con,$sql);
         ?>
-
-        <h3>All Customer Apperars here</h3>
+    <div class="container">
+        <h2>List of Customers</h3>
         <table class = "table table-dark table-hover">
             <thead>
                 <tr>
