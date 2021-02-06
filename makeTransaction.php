@@ -149,7 +149,7 @@
             <br>
             <br>
                 <label class = "text-light">Amount:</label>
-                <input type="number" class="form-control" name="amount" placeholder = "50000.50" required>   
+                <input type="decimal" class="form-control" name="amount" placeholder = "50000.50" required>   
                 <br><br>
                     <div class="text-center" >
                 <button class="btn btn-dark btn-outline-success mt-3 px-4" name="submit" type="submit" id="myBtn">Transfer</button>
