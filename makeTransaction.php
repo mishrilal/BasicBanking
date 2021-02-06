@@ -41,8 +41,11 @@
             $tranId = rand(10000, 99999);
             $dt = date('d/m/Y h:i:s');
             $from = $sql1['accountNo'];
+            $nFrom = $sql1['firstName'] . ' ' . $sql1['lastName'];
+
             $to = $sql2['accountNo'];
-            $sql = "INSERT INTO `transcations`(`transcationID`, `accountFrom`, `accountTo`, `amount`) VALUES ($tranId, $from, $to, $amount)";
+            $nTo = $sql2['firstName'] . ' '  . $sql2['lastName'];
+            $sql = "INSERT INTO `transcations` (`transcationID`, `accountFrom`, `accountTo`, `amount`, `nameFrom`, `nameTo`) VALUES ($tranId, $from, $to, $amount, '$nFrom', '$nTo')";
             $query=mysqli_query($con, $sql);
 
 
