@@ -57,7 +57,7 @@
             }
             else {
                 echo "<script>
-                        alert('Something went Wrong, Try again later, $sql');
+                        alert('Something went Wrong, Try again later');
                      </script>";
             }
 

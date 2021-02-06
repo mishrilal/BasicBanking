@@ -14,6 +14,9 @@
         <a class="nav-link" href="viewCustomer.php">View All Customer</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="transferMoney.php">Money Transfer</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="transactionHistory.php">Transcation History</a>
       </li>
     </ul>

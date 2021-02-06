@@ -23,7 +23,8 @@
                 </div>
             <br>
             <div class="buttonPosition">
-                <a href="viewCustomer.php"><button class="btn btn-dark btn-outline-warning">View All Customer</button></a>
+                <a href="viewCustomer.php"><button class="btn btn-dark btn-outline-warning mr-3">View All Customer</button></a>
+                <a href="transferMoney.php"><button class="btn btn-dark btn-outline-warning mr-3">Transfer Money</button></a>
                 <a href="transactionHistory.php"><button class="btn btn-dark btn-outline-warning">Transaction History</button></a>
             </div>
         </div>
