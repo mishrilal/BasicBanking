@@ -87,74 +87,75 @@
     <?php 
         include 'navbar.php'
         ?>
-        <h3>transfermoney</h3>
         <div class="container">
-        <h2 class="text-center pt-4">Transaction</h2>
-            <?php
-                include 'connection.php';
-                $sid=$_GET['id'];
-                $sql = "SELECT * FROM  users where accountNo=$sid";
-                $result=mysqli_query($con,$sql);
-                if(!$result)
-                {
-                    echo "Error : ".$sql."<br>".mysqli_error($con);
-                }
-                $rows=mysqli_fetch_assoc($result);
-            ?>
-            <form method="post" name="tcredit" class="tabletext" ><br>
-        <div>
-            <table class="table table-striped table-condensed table-bordered">
-                <tr>
-                    <th class="text-center">AccountNo</th>
-                    <th class="text-center">Name</th>
-                    <th class="text-center">Email</th>
-                    <th class="text-center">Balance</th>
-                </tr>
-                <tr>
-                    <td class="py-2"><?php echo $rows['accountNo'] ?></td>
-                    <td class="py-2"><?php echo $rows['firstName'], ' ', $rows['lastname'] ?></td>
-                    <td class="py-2"><?php echo $rows['email'] ?></td>
-                    <td class="py-2"><?php echo $rows['balance'] ?></td>
-                </tr>
-            </table>
-        </div>
-        <br><br><br>
-        <label>Transfer To:</label>
-        <select name="to" class="form-control" required>
-            <option value="" disabled selected>Choose</option>
-            <?php
-                include 'connection.php';
-                $sid=$_GET['id'];
-                $sql = "SELECT * FROM users where accountNo!=$sid";
-                $result=mysqli_query($con,$sql);
-                if(!$result)
-                {
-                    echo "Error ".$sql."<br>".mysqli_error($con);
-                }
-                while($rows = mysqli_fetch_assoc($result)) {
-            ?>
-                <option class="table" value="<?php echo $rows['accountNo'];?>" >
-                
-                    <?php echo $rows['firstName'], ' ', $rows['lastName'] ;?> (Account No.: 
-                        <?php echo $rows['accountNo']; ?> Balance:
-                        <?php echo $rows['balance'] ;?>) 
-               
-                </option>
-            <?php 
-                } 
-            ?>
+            <h2>Transfer Money</h2>
+                <?php
+                    include 'connection.php';
+                    $sid=$_GET['id'];
+                    $sql = "SELECT * FROM  users where accountNo=$sid";
+                    $result=mysqli_query($con,$sql);
+                    if(!$result)
+                    {
+                        echo "Error : ".$sql."<br>".mysqli_error($con);
+                    }
+                    $rows=mysqli_fetch_assoc($result);
+                ?>
+                <form method="post" name="tcredit" class="tabletext" ><br>
             <div>
-        </select>
-        <br>
-        <br>
-            <label>Amount:</label>
-            <input type="number" class="form-control" name="amount" required>   
-            <br><br>
-                <div class="text-center" >
-            <button class="btn mt-3" name="submit" type="submit" id="myBtn">Transfer</button>
+                <table class="table table-dark table-hover table-condensed table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="text-center">AccountNo</th>
+                            <th class="text-center">Name</th>
+                            <th class="text-center">Email</th>
+                            <th class="text-center">Balance</th>
+                        </tr>
+                    </thead>
+                    <tr class = "text-center">
+                        <td class="py-2"><?php echo $rows['accountNo'] ?></td>
+                        <td class="py-2"><?php echo $rows['firstName'], ' ', $rows['lastname'] ?></td>
+                        <td class="py-2"><?php echo $rows['email'] ?></td>
+                        <td class="py-2"><?php echo $rows['balance'] ?></td>
+                    </tr>
+                </table>
             </div>
-        </form>
-    </div>
+            <br><br><br>
+            <label class = "text-light">Transfer To:</label>
+            <select name="to" class="form-control" required>
+                <option value="" disabled selected>Choose</option>
+                <?php
+                    include 'connection.php';
+                    $sid=$_GET['id'];
+                    $sql = "SELECT * FROM users where accountNo!=$sid";
+                    $result=mysqli_query($con,$sql);
+                    if(!$result)
+                    {
+                        echo "Error ".$sql."<br>".mysqli_error($con);
+                    }
+                    while($rows = mysqli_fetch_assoc($result)) {
+                ?>
+                    <option class="table" value="<?php echo $rows['accountNo'];?>" >
+                    
+                        <?php echo $rows['firstName'], ' ', $rows['lastName'] ;?> (Account No.: 
+                            <?php echo $rows['accountNo']; ?> Balance:
+                            <?php echo $rows['balance'] ;?>) 
+                
+                    </option>
+                <?php 
+                    } 
+                ?>
+                <div>
+            </select>
+            <br>
+            <br>
+                <label class = "text-light">Amount:</label>
+                <input type="number" class="form-control" name="amount" placeholder = "50000.50" required>   
+                <br><br>
+                    <div class="text-center" >
+                <button class="btn btn-dark btn-outline-success mt-3 px-4" name="submit" type="submit" id="myBtn">Transfer</button>
+                </div>
+            </form>
+        </div>
     </body>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
